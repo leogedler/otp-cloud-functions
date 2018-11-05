@@ -14,7 +14,7 @@ module.exports = (req, res) => {
 
       const from = 'Nexmo';
       const to = phone;
-      const text = `Your code is: ${code}`;
+      const text = `Your code is: ${code} `;
 
       return nexmo.message.sendSms(from, to, text, {}, (err) => {
         if (err) {
